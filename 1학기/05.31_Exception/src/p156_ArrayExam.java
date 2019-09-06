@@ -6,6 +6,6 @@ public class p156_ArrayExam {
 		for(int i=0; i<data.length;i++) {
 			System.out.println("data["+i+"] : "+data[i]);
 		}
-		System.out.println("¿Ï·á");
+		System.out.println("ì™„ë£Œ");
 	}
 }

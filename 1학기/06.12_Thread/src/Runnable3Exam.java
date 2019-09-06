@@ -9,10 +9,10 @@ class Top3 implements Runnable {
 
 public class Runnable3Exam {
 	public static void main(String[] args) {
-		System.out.println("ÇÁ·Î±×·¥ ½ÃÀÛ");
+		System.out.println("í”„ë¡œê·¸ë¨ ì‹œì‘");
 		Top3 t = new Top3();
-		Thread thd1 = new Thread(t, "a");	//ÀÌ¸§: a
-		Thread thd2 = new Thread(t, "b");	//ÀÌ¸§: b
+		Thread thd1 = new Thread(t, "a");	//ì´ë¦„: a
+		Thread thd2 = new Thread(t, "b");	//ì´ë¦„: b
 		thd1.setPriority(Thread.MAX_PRIORITY);		//10
 		thd2.setPriority(Thread.MIN_PRIORITY);		//1
 		thd1.start();
@@ -20,7 +20,7 @@ public class Runnable3Exam {
 		System.out.println(thd1.getPriority());
 		System.out.println(thd2.getPriority());
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ ì¢…ë£Œ");
 	}
 }
 

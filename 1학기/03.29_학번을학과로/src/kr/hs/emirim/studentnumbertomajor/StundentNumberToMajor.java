@@ -4,47 +4,47 @@ import java.util.Scanner;
 
 public class StundentNumberToMajor {
 	public static void main(String[] args) {
-		String[] ÇĞ³â3 = {"ÀÎÅÍ·¢Æ¼ºê¹Ìµğ¾î°ú", "ÀÎÅÍ·¢Æ¼ºê¹Ìµğ¾î°ú",
-				"´º¹Ìµğ¾îµğÀÚÀÎ°ú", "´º¹Ìµğ¾îµğÀÚÀÎ°ú", "´º¹Ìµğ¾î¼Ö·ç¼Ç°ú", "´º¹Ìµğ¾î¼Ö·ç¼Ç°ú"};
-		String[] ÇĞ³â2 = {"´º¹Ìµğ¾î¼ÒÇÁÆ®¿ş¾î°ú", "´º¹Ìµğ¾î¼ÒÇÁÆ®¿ş¾î°ú",
-				"´º¹Ìµğ¾îÀ¥¼Ö·ç¼Ç°ú", "´º¹Ìµğ¾îÀ¥¼Ö·ç¼Ç°ú", "´º¹Ìµğ¾îµğÀÚÀÎ°ú", "´º¹Ìµğ¾îµğÀÚÀÎ°ú"};
-		//ÇĞ¹øÀ» ÀÔ·Â¹ŞÀÚ
+		String[] í•™ë…„3 = {"ì¸í„°ë™í‹°ë¸Œë¯¸ë””ì–´ê³¼", "ì¸í„°ë™í‹°ë¸Œë¯¸ë””ì–´ê³¼",
+				"ë‰´ë¯¸ë””ì–´ë””ìì¸ê³¼", "ë‰´ë¯¸ë””ì–´ë””ìì¸ê³¼", "ë‰´ë¯¸ë””ì–´ì†”ë£¨ì…˜ê³¼", "ë‰´ë¯¸ë””ì–´ì†”ë£¨ì…˜ê³¼"};
+		String[] í•™ë…„2 = {"ë‰´ë¯¸ë””ì–´ì†Œí”„íŠ¸ì›¨ì–´ê³¼", "ë‰´ë¯¸ë””ì–´ì†Œí”„íŠ¸ì›¨ì–´ê³¼",
+				"ë‰´ë¯¸ë””ì–´ì›¹ì†”ë£¨ì…˜ê³¼", "ë‰´ë¯¸ë””ì–´ì›¹ì†”ë£¨ì…˜ê³¼", "ë‰´ë¯¸ë””ì–´ë””ìì¸ê³¼", "ë‰´ë¯¸ë””ì–´ë””ìì¸ê³¼"};
+		//í•™ë²ˆì„ ì…ë ¥ë°›ì
 		Scanner scanner = new Scanner(System.in);
 		String studentNumber = scanner.nextLine();
 		
-		//ÇĞ°ú¸¦ Ãâ·ÂÇÏÀÚ
-		//0¹øÂ° ±ÛÀÚ°¡ 3ÀÌ¸é
+		//í•™ê³¼ë¥¼ ì¶œë ¥í•˜ì
+		//0ë²ˆì§¸ ê¸€ìê°€ 3ì´ë©´
 		if(studentNumber.substring(0, 1).equals("3")) {
-			//1,2´Â ÀÎÅÍ·¢Æ¼ºê¹Ìµğ¾î, 3,4Àº ´º¹Ìµğ¾îµğÀÚÀÎ, 5,6Àº ´º¹Ìµğ¾î¼Ö·ç¼Ç
+			//1,2ëŠ” ì¸í„°ë™í‹°ë¸Œë¯¸ë””ì–´, 3,4ì€ ë‰´ë¯¸ë””ì–´ë””ìì¸, 5,6ì€ ë‰´ë¯¸ë””ì–´ì†”ë£¨ì…˜
 			String classroomStr = studentNumber.substring(1,2);
 			int classroom = Integer.parseInt(classroomStr)-1;
-			System.out.println(ÇĞ³â3[classroom]);
+			System.out.println(í•™ë…„3[classroom]);
 //			if(studentNumber.substring(1, 2).equals("1")
 //					|| studentNumber.substring(1, 2).equals("2")) {
-//				System.out.println("ÀÎÅÍ·¢Æ¼ºê¹Ìµğ¾î°ú");
+//				System.out.println("ì¸í„°ë™í‹°ë¸Œë¯¸ë””ì–´ê³¼");
 //			} else if(studentNumber.substring(1, 2).equals("3")
 //					|| studentNumber.substring(1, 2).equals("4")) {
-//				System.out.println("´º¹Ìµğ¾îµğÀÚÀÎ°ú");
+//				System.out.println("ë‰´ë¯¸ë””ì–´ë””ìì¸ê³¼");
 //			} else if(studentNumber.substring(1, 2).equals("5")
 //					|| studentNumber.substring(1, 2).equals("6")) {
-//				System.out.println("´º¹Ìµğ¾î¼Ö·ç¼Ç°ú");
+//				System.out.println("ë‰´ë¯¸ë””ì–´ì†”ë£¨ì…˜ê³¼");
 //			}
 		} else {
-			//0¹øÂ° ±ÛÀÚ°¡ 3ÀÌ ¾Æ´Ï¸é
-			//1,2´Â ´º¹Ìµğ¾î¼ÒÇÁÆ®¿ş¾î, 3,4Àº ´º¹Ìµğ¾îÀ¥¼Ö·ç¼Ç, 5,6Àº ´º¹Ìµğ¾îµğÀÚÀÎ
+			//0ë²ˆì§¸ ê¸€ìê°€ 3ì´ ì•„ë‹ˆë©´
+			//1,2ëŠ” ë‰´ë¯¸ë””ì–´ì†Œí”„íŠ¸ì›¨ì–´, 3,4ì€ ë‰´ë¯¸ë””ì–´ì›¹ì†”ë£¨ì…˜, 5,6ì€ ë‰´ë¯¸ë””ì–´ë””ìì¸
 			String classroomStr = studentNumber.substring(1,2);
 			int classroom = Integer.parseInt(classroomStr)-1;
-			System.out.println(ÇĞ³â2[classroom]);
+			System.out.println(í•™ë…„2[classroom]);
 			
 //			if(studentNumber.substring(1, 2).equals("1")
 //					|| studentNumber.substring(1, 2).equals("2")) {
-//				System.out.println("´º¹Ìµğ¾î¼ÒÇÁÆ®¿ş¾î°ú");
+//				System.out.println("ë‰´ë¯¸ë””ì–´ì†Œí”„íŠ¸ì›¨ì–´ê³¼");
 //			} else if(studentNumber.substring(1, 2).equals("3")
 //					|| studentNumber.substring(1, 2).equals("4")) {
-//				System.out.println("´º¹Ìµğ¾îÀ¥¼Ö·ç¼Ç°ú");
+//				System.out.println("ë‰´ë¯¸ë””ì–´ì›¹ì†”ë£¨ì…˜ê³¼");
 //			} else if(studentNumber.substring(1, 2).equals("5")
 //					|| studentNumber.substring(1, 2).equals("6")) {
-//				System.out.println("´º¹Ìµğ¾îµğÀÚÀÎ°ú");
+//				System.out.println("ë‰´ë¯¸ë””ì–´ë””ìì¸ê³¼");
 //			}
 		}
 

@@ -13,18 +13,18 @@ public class Program {
 		System.out.println("in1.equals(in2) --> "+in1.equals(in2));
 		System.out.println("in1.equals(in3) --> "+in1.equals(in3));
 		System.out.println("------------------");
-		//toString() : Wrapper Å¬·¡½º -> String
+		//toString() : Wrapper í´ë˜ìŠ¤ -> String
 		System.out.println(new Integer(100).toString());
 		System.out.println(new Double(55.7).toString());
 		System.out.println("------------------");
-		//valueOf() : String -> Wrapper Å¬·¡½º
+		//valueOf() : String -> Wrapper í´ë˜ìŠ¤
 		System.out.println(Integer.valueOf("123"));
 		System.out.println(Double.valueOf("123.456"));
 		//parseInt() : String -> int
 		System.out.println(Integer.parseInt("456"));
 		//parseDouble() : String -> double
 		System.out.println(Double.parseDouble("789.123"));
-		//WrapperÅ¬·¡½º -> ±âº»ÀÚ·áÇü
+		//Wrapperí´ë˜ìŠ¤ -> ê¸°ë³¸ìë£Œí˜•
 		System.out.println(new Integer(100).intValue());
 		System.out.println(new Double(3.31).doubleValue());
 		

@@ -4,12 +4,12 @@ public class p155_NullPointExam {
 	public static void main(String[] args) {
 		String str = null;
 		try {
-			System.out.println("¹®ÀÚ¿­: "+str.length());
+			System.out.println("ë¬¸ìì—´: "+str.length());
 		} catch (NullPointerException e) {
-			System.out.println("ºÒ°¡´É");
+			System.out.println("ë¶ˆê°€ëŠ¥");
 			System.out.println(e.toString());
 			e.printStackTrace();
 		}
-		System.out.println("¿Ï·á");
+		System.out.println("ì™„ë£Œ");
 	}
 }

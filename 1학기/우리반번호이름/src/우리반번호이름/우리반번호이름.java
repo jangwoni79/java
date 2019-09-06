@@ -1,35 +1,35 @@
-package ¿ì¸®¹Ý¹øÈ£ÀÌ¸§;
+package ìš°ë¦¬ë°˜ë²ˆí˜¸ì´ë¦„;
 
 import java.util.Scanner;
 
 //import java.util.Scanner;
 
-public class ¿ì¸®¹Ý¹øÈ£ÀÌ¸§ {
+public class ìš°ë¦¬ë°˜ë²ˆí˜¸ì´ë¦„ {
 	public static void main(String[] args) {
 		// 2-3
-		// "°­Áö¹Î", "°­ÇýÁ¤", "±è°¡¿µ", "±è³ª¿µ", "±è¼±¿Á", "±è¼öÁø", "·ùÁ¤¹Î", "¹Ú±³·É", "¼­³²°æ", "¿À½Â¿¬", "¿ø¿¹¸°",
-		// "¿øÃ¤¸°", "ÀÌ¼­Çö", "ÀÌÃ¤¸°", "ÀÌÇö¼ö", "ÀÓÇöÁø", "Àå¿øÀÌ", "ÀåÀ¯°æ", "ÇÑ´Ù¿¬"
+		// "ê°•ì§€ë¯¼", "ê°•í˜œì •", "ê¹€ê°€ì˜", "ê¹€ë‚˜ì˜", "ê¹€ì„ ì˜¥", "ê¹€ìˆ˜ì§„", "ë¥˜ì •ë¯¼", "ë°•êµë ¹", "ì„œë‚¨ê²½", "ì˜¤ìŠ¹ì—°", "ì›ì˜ˆë¦°",
+		// "ì›ì±„ë¦°", "ì´ì„œí˜„", "ì´ì±„ë¦°", "ì´í˜„ìˆ˜", "ìž„í˜„ì§„", "ìž¥ì›ì´", "ìž¥ìœ ê²½", "í•œë‹¤ì—°"
 		// 2-4
-		String[] ¹Ý4 = { "°­Àº¼­", "°û°¡¿¬", "±è¹ÎÁö", "±èº½ÀÌ", "±è¼ÒÇö", "±èÃ¤¹Î", "³²Á¤À±", "¹Ú¼­¿¬", "¼­Çý¸²", "½ÅÃ¤¸°", "¾ç¼öºó", "¾öÇÏ´Ã", "¿øÃ¤¿¬",
-				"À±¼öºó", "ÀÓÅÂÈñ", "ÀüÀºÁ¤", "Á¤À¯°æ", "ÇÔÁöÇö" };
-//		for(int i = 0;i<¹Ý4.length;i++) {
-//			System.out.println(¹Ý4[i]);
+		String[] ë°˜4 = { "ê°•ì€ì„œ", "ê³½ê°€ì—°", "ê¹€ë¯¼ì§€", "ê¹€ë´„ì´", "ê¹€ì†Œí˜„", "ê¹€ì±„ë¯¼", "ë‚¨ì •ìœ¤", "ë°•ì„œì—°", "ì„œí˜œë¦¼", "ì‹ ì±„ë¦°", "ì–‘ìˆ˜ë¹ˆ", "ì—„í•˜ëŠ˜", "ì›ì±„ì—°",
+				"ìœ¤ìˆ˜ë¹ˆ", "ìž„íƒœí¬", "ì „ì€ì •", "ì •ìœ ê²½", "í•¨ì§€í˜„" };
+//		for(int i = 0;i<ë°˜4.length;i++) {
+//			System.out.println(ë°˜4[i]);
 //		}
-		for(String name:¹Ý4) {
+		for(String name:ë°˜4) {
 			System.out.println(name);
 		}
 		
-		System.out.println("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä. ÀÌ¸§À» ¾Ë·Áµå¸³´Ï´Ù.");
-		// ÀÔ·ÂÇÏÀÚ
+		System.out.println("ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”. ì´ë¦„ì„ ì•Œë ¤ë“œë¦½ë‹ˆë‹¤.");
+		// ìž…ë ¥í•˜ìž
 		Scanner scanner = new Scanner(System.in);
 		for(;;) {
 		//while (true) {
 			// ----
 			int number = scanner.nextInt();
 			//1<=number<=18
-			if(1<=number && number<=¹Ý4.length) {
-				// Ãâ·ÂÇÏÀÚ
-				System.out.println(¹Ý4[number - 1]);
+			if(1<=number && number<=ë°˜4.length) {
+				// ì¶œë ¥í•˜ìž
+				System.out.println(ë°˜4[number - 1]);
 			} else {
 				break;
 			}
@@ -37,27 +37,27 @@ public class ¿ì¸®¹Ý¹øÈ£ÀÌ¸§ {
 		}
 
 //		if(number == 1) {
-//			System.out.println("°­Áö¹Î");
+//			System.out.println("ê°•ì§€ë¯¼");
 //		} else if(number == 2) {
-//			System.out.println("°­ÇýÁ¤");
+//			System.out.println("ê°•í˜œì •");
 //		} else if(number == 3) {
-//			System.out.println("±è°¡¿µ");
+//			System.out.println("ê¹€ê°€ì˜");
 //		} else if(number == 4) {
-//			System.out.println("±è³ª¿µ");
+//			System.out.println("ê¹€ë‚˜ì˜");
 //		}
 
 //		switch (number) {
 //		case 1:
-//			System.out.println("°­Áö¹Î");
+//			System.out.println("ê°•ì§€ë¯¼");
 //			break;
 //		case 2:
-//			System.out.println("°­ÇýÁ¤");
+//			System.out.println("ê°•í˜œì •");
 //			break;
 //		case 3:
-//			System.out.println("±è°¡¿µ");
+//			System.out.println("ê¹€ê°€ì˜");
 //			break;
 //		case 4:
-//			System.out.println("±è³ª¿µ");
+//			System.out.println("ê¹€ë‚˜ì˜");
 //			break;
 //
 //		default:

@@ -38,12 +38,12 @@ public class Mathematics {
 		System.out.println((int)(Math.random()*5));
 		System.out.println((int)(Math.random()*10));
 		System.out.println((int)(Math.random()*100));
-		//Random Å¬·¡½º
+		//Random í´ë˜ìŠ¤
 		Random random = new Random();
-		int randomNumber = random.nextInt(100);		//0~99±îÁö ÀÓÀÇÀÇ Á¤¼ö
+		int randomNumber = random.nextInt(100);		//0~99ê¹Œì§€ ì„ì˜ì˜ ì •ìˆ˜
 		int start = 100;
 		int end = 999;
-		int randomNumber100to999 = random.nextInt(end-start+1)+start;	//start~end±îÁö ÀÓÀÇÀÇ Á¤¼ö
+		int randomNumber100to999 = random.nextInt(end-start+1)+start;	//start~endê¹Œì§€ ì„ì˜ì˜ ì •ìˆ˜
 	}
 
 }

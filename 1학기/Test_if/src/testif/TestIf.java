@@ -6,11 +6,11 @@ public class TestIf {
 
 	public static void main(String[] args) {
 		int member = 1;
-		// if¹®À¸·Î member°¡ 5ÀÌ¸é, itzy Ãâ·Â
-		// member°¡ 7ÀÌ¸é, BTS Ãâ·Â
-		// member°¡ 9ÀÌ¸é, EXO Ãâ·Â
-		// member°¡ 1ÀÌ¸é, IU Ãâ·Â
-		// member°¡ 13ÀÌ¸é, Seventeen Ãâ·Â
+		// ifë¬¸ìœ¼ë¡œ memberê°€ 5ì´ë©´, itzy ì¶œë ¥
+		// memberê°€ 7ì´ë©´, BTS ì¶œë ¥
+		// memberê°€ 9ì´ë©´, EXO ì¶œë ¥
+		// memberê°€ 1ì´ë©´, IU ì¶œë ¥
+		// memberê°€ 13ì´ë©´, Seventeen ì¶œë ¥
 		if (member == 5) {
 			System.out.println("itzy");
 		} else if (member == 7) {
@@ -22,7 +22,7 @@ public class TestIf {
 		} else if (member == 13) {
 			System.out.println("Seventeen");
 		}
-		// switch¹®À¸·Î ¹Ù²ÙÀÚ
+		// switchë¬¸ìœ¼ë¡œ ë°”ê¾¸ì
 		switch (member) {
 		case 5:
 			System.out.println("itzy");
@@ -44,8 +44,8 @@ public class TestIf {
 			break;
 		}
 		System.out.println("--------------------------");
-		// ¹İº¹¹®
-		// ±¸±¸´Ü 2´Ü Ãâ·ÂÇÏÀÚ
+		// ë°˜ë³µë¬¸
+		// êµ¬êµ¬ë‹¨ 2ë‹¨ ì¶œë ¥í•˜ì
 		int dan = 2;
 		System.out.println(dan + " x " + 1 + " = " + dan * 1);
 		System.out.println(dan + " x " + 2 + " = " + dan * 2);
@@ -60,7 +60,7 @@ public class TestIf {
 		for (int i = 1; i <= 9; i++) {
 			System.out.println(dan + " x " + i + " = " + dan * i);
 		}
-		// while¹®
+		// whileë¬¸
 		dan = 2;
 		int i = 1;
 		while (i <= 9) {
@@ -87,8 +87,8 @@ public class TestIf {
 			}
 		}
 		System.out.println("-----------------");
-		// ÀÔ·Â¹ŞÀÚ
-		System.out.println("¸â¹ö¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+		// ì…ë ¥ë°›ì
+		System.out.println("ë©¤ë²„ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 		Scanner scanner = new Scanner(System.in);
 		// ----
 		while (true) {
@@ -104,13 +104,13 @@ public class TestIf {
 			} else if (member == 13) {
 				System.out.println("Seventeen");
 			} else {
-				System.out.println("Å»Ãâ");
+				System.out.println("íƒˆì¶œ");
 				break;
 			}
 		}
 		// ----
 		System.out.println("----");
-		//¹øÈ£¸¦ ÀÔ·ÂÇÏ¸é, ¿ì¸®¹İ ÇĞ»ı ÀÌ¸§À» Ãâ·ÂÇÏÀÚ
+		//ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ë©´, ìš°ë¦¬ë°˜ í•™ìƒ ì´ë¦„ì„ ì¶œë ¥í•˜ì
 		
 	}
 

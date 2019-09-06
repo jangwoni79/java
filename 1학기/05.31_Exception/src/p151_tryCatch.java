@@ -2,20 +2,20 @@
 public class p151_tryCatch {
 	public static void main(String[] args) {
 		String[] irum = new String[3];
-		irum[0] = "ÀÌÃ¤¸°";
-		irum[1] = "¿øÃ¤¸°";
-		irum[2] = "¼­³²°æ";
+		irum[0] = "ì´ì±„ë¦°";
+		irum[1] = "ì›ì±„ë¦°";
+		irum[2] = "ì„œë‚¨ê²½";
 		try {
 			for(int i = 0; i<=irum.length; i++) {
 				System.out.println(irum[i]);
 			}
 		} catch(ArrayIndexOutOfBoundsException e) {
-			System.out.println("¿¹¿Ü ¹ß»ı");
+			System.out.println("ì˜ˆì™¸ ë°œìƒ");
 			e.printStackTrace();
 		} catch(Exception e) {
-			System.out.println("ÀÍ¼Á¼Ç");
+			System.out.println("ìµì…‰ì…˜");
 		} finally {
-			System.out.println("¹«Á¶°Ç ½ÇÇàÇÕ´Ï´Ù.");
+			System.out.println("ë¬´ì¡°ê±´ ì‹¤í–‰í•©ë‹ˆë‹¤.");
 		}
 	}
 }
