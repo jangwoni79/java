@@ -22,6 +22,8 @@ public class GUI2_Components {
         JComboBox cbox0 = new JComboBox(idol);
         cbox0.addItem("김재환");
 
+        JLabel lbResult = new JLabel("Result");
+
         bt0.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -39,7 +41,10 @@ public class GUI2_Components {
         panel.add(tf0);
         panel.add(ta0);
         panel.add(cbox0);
+        panel.add(lbResult);
+
         frame.add(panel);
+
 
         frame.setPreferredSize(new Dimension(600, 400));
         frame.pack();
