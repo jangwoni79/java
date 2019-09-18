@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class GUI2_Components {
     public static void main(String[] args) {
@@ -19,6 +21,13 @@ public class GUI2_Components {
         String[] idol = {"김요한","김우석","한승우","이한결","강민희","손동표","이은상","차준호","남도현","송형준","조승연"};
         JComboBox cbox0 = new JComboBox(idol);
         cbox0.addItem("김재환");
+
+        bt0.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                bt0.setText("Clicked");
+            }
+        });
 
 
         panel.add(lb0);
